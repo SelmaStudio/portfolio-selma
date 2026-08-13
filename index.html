@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Selma Portfolio | نمونه کارهای سلما</title>
+
+    <meta name="description" content="Portfolio شخصی سلما - طراحی سایت، برنامه نویسی و نمونه کارها">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         SVG ICONS
+         آیکون‌ها داخلی هستند تا در GitHub Pages هم نمایش داده شوند
+    ====================================================== -->
+
+    <svg class="icon-sprite" aria-hidden="true">
+
+        <symbol id="icon-star" viewBox="0 0 24 24">
+            <path d="m12 2 2.9 6.1L21.5 9l-4.7 4.7 1.1 6.6L12 17.2 6.1 20.3l1.1-6.6L2.5 9l6.6-.9L12 2Z"
+                fill="currentColor" />
+        </symbol>
+
+        <symbol id="icon-moon" viewBox="0 0 24 24">
+            <path d="M20.5 15.3A8.5 8.5 0 0 1 8.7 3.5 8.5 8.5 0 1 0 20.5 15.3Z" fill="none" stroke="currentColor"
+                stroke-width="2" />
+        </symbol>
+
+        <symbol id="icon-sun" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2" />
+            <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        </symbol>
+
+        <symbol id="icon-menu" viewBox="0 0 24 24">
+            <path d="M4 6h16M4 12h16M4 18h16" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" />
+        </symbol>
+
+        <symbol id="icon-close" viewBox="0 0 24 24">
+            <path d="m6 6 12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        </symbol>
+
+        <symbol id="icon-arrow-left" viewBox="0 0 24 24">
+            <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </symbol>
+
+        <symbol id="icon-arrow-up" viewBox="0 0 24 24">
+            <path d="M12 19V5M6 11l6-6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </symbol>
+
+        <symbol id="icon-code" viewBox="0 0 24 24">
+            <path d="m8 9-3 3 3 3M16 9l3 3-3 3M14 5l-4 14" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+        </symbol>
+
+        <symbol id="icon-palette" viewBox="0 0 24 24">
+            <path d="M12 3a9 9 0 1 0 0 18h1.5a2 2 0 0 0 0-4H12a2 2 0 0 1 0-4h4a5 5 0 0 0 0-10h-4Z" fill="none"
+                stroke="currentColor" stroke-width="2" />
+            <circle cx="7.5" cy="10" r="1" fill="currentColor" />
+            <circle cx="9.5" cy="6.5" r="1" fill="currentColor" />
+            <circle cx="14" cy="6" r="1" fill="currentColor" />
+        </symbol>
+
+        <symbol id="icon-user" viewBox="0 0 24 24">
+            <circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="2" />
+            <path d="M4 21a8 8 0 0 1 16 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        </symbol>
+
+        <symbol id="icon-graduation" viewBox="0 0 24 24">
+            <path d="m3 9 9-5 9 5-9 5-9-5Z" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linejoin="round" />
+            <path d="M7 11v5c3 2 7 2 10 0v-5M21 9v6" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" />
+        </symbol>
+
+        <symbol id="icon-laptop" viewBox="0 0 24 24">
+            <rect x="4" y="4" width="16" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="2" />
+            <path d="M2 20h20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        </symbol>
+
+        <symbol id="icon-heart" viewBox="0 0 24 24">
+            <path d="M20.8 8.7c0 5-8.8 10.3-8.8 10.3S3.2 13.7 3.2 8.7A4.7 4.7 0 0 1 12 6a4.7 4.7 0 0 1 8.8 2.7Z"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+        </symbol>
+
+        <symbol id="icon-github" viewBox="0 0 24 24">
+            <path
+                d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.9c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 0 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.4-1.1.7-1.3-2.2-.3-4.5-1.1-4.5-4.8 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1a9.7 9.7 0 0 1 5.1 0c2-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.7-2.3 4.5-4.5 4.8.4.3.7 1 .7 1.9V21c0 .3.2.6.7.5A10 10 0 0 0 12 2Z"
+                fill="currentColor" />
+        </symbol>
+
+        <symbol id="icon-instagram" viewBox="0 0 24 24">
+            <rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2" />
+            <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2" />
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
+        </symbol>
+
+        <symbol id="icon-telegram" viewBox="0 0 24 24">
+            <path d="m21 4-3 17-6-6-4 3 1-6-7-3 19-5Z" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linejoin="round" />
+            <path d="m9 15 7-8" fill="none" stroke="currentColor" stroke-width="2" />
+        </symbol>
+
+        <symbol id="icon-eye" viewBox="0 0 24 24">
+            <path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z" fill="none" stroke="currentColor"
+                stroke-width="2" />
+            <circle cx="12" cy="12" r="2.5" fill="none" stroke="currentColor" stroke-width="2" />
+        </symbol>
+
+        <symbol id="icon-external" viewBox="0 0 24 24">
+            <path d="M14 5h5v5M19 5l-9 9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            <path d="M19 13v5a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" />
+        </symbol>
+
+    </svg>
+
+
+    <!-- BACKGROUND -->
+    <div class="background-shape shape-one"></div>
+    <div class="background-shape shape-two"></div>
+
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a href="#home" class="logo">
+                <span class="logo-icon">
+                    <svg>
+                        <use href="#icon-star"></use>
+                    </svg>
+                </span>
+
+                <span>
+                    Selma<span class="pink-text">.</span>
+                </span>
+            </a>
+
+
+            <nav class="nav-menu">
+
+                <a href="#home" class="nav-link active">خانه</a>
+                <a href="#about" class="nav-link">درباره من</a>
+                <a href="#skills" class="nav-link">مهارت‌ها</a>
+                <a href="#projects" class="nav-link">پروژه‌ها</a>
+                <a href="#gallery" class="nav-link">گالری</a>
+                <a href="#contact" class="nav-link">ارتباط</a>
+
+            </nav>
+
+
+            <div class="nav-actions">
+
+                <button class="theme-btn" id="themeBtn" aria-label="تغییر حالت سایت">
+
+                    <svg id="themeIcon">
+                        <use href="#icon-moon"></use>
+                    </svg>
+
+                </button>
+
+
+                <a href="#contact" class="nav-contact">
+                    تماس با من
+                </a>
+
+
+                <button class="menu-btn" id="menuBtn" aria-label="باز کردن منو">
+
+                    <svg>
+                        <use href="#icon-menu"></use>
+                    </svg>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- MOBILE MENU -->
+
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <div class="mobile-menu" id="mobileMenu">
+
+        <button class="mobile-close" id="mobileClose">
+            <svg>
+                <use href="#icon-close"></use>
+            </svg>
+        </button>
+
+        <a href="#home">خانه</a>
+        <a href="#about">درباره من</a>
+        <a href="#skills">مهارت‌ها</a>
+        <a href="#projects">پروژه‌ها</a>
+        <a href="#gallery">گالری</a>
+        <a href="#contact">ارتباط</a>
+
+    </div>
+
+
+    <main>
+
+        <!-- =====================================================
+             HERO
+        ====================================================== -->
+
+        <section class="hero section" id="home">
+
+            <div class="hero-content reveal">
+
+                <div class="hero-badge">
+                    <span class="status-dot"></span>
+                    آماده ساخت پروژه‌های جدید
+                </div>
+
+
+                <h1>
+                    سلام، من
+                    <span class="gradient-text">
+                        سلما
+                    </span>
+                    هستم
+                </h1>
+
+
+                <h2>
+                    طراح وب و علاقه‌مند به برنامه‌نویسی
+                </h2>
+
+
+                <p>
+                    اینجا مجموعه‌ای از پروژه‌ها، تمرین‌ها و
+                    نمونه‌کارهای من قرار گرفته است.
+                    هدفم این است که با یادگیری مداوم،
+                    پروژه‌های زیباتر و حرفه‌ای‌تری بسازم.
+                </p>
+
+
+                <div class="hero-buttons">
+
+                    <a href="#projects" class="btn btn-primary">
+                        مشاهده پروژه‌ها
+
+                        <svg>
+                            <use href="#icon-arrow-left"></use>
+                        </svg>
+                    </a>
+
+                    <a href="#about" class="btn btn-secondary">
+                        بیشتر درباره من
+                    </a>
+
+                </div>
+
+
+                <!-- =================================================
+                     لینک شبکه‌های اجتماعی خودت را اینجا بگذار
+                ================================================== -->
+
+                <div class="hero-socials">
+
+                    <a href="https://github.com/SelmaStudio"
+   class="social-link"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="GitHub">
+
+    <svg>
+        <use href="#icon-github"></use>
+    </svg>
+
+</a>
+                       
+
+                    </a>
+
+                  <a href="https://www.instagram.com/gxriue"
+   class="social-link"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Instagram">
+
+    <svg>
+        <use href="#icon-instagram"></use>
+    </svg>
+
+</a>
+
+                   <a href="https://t.me/gxriue"
+   class="social-link"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Telegram">
+
+    <svg>
+        <use href="#icon-telegram"></use>
+    </svg>
+
+</a>
+                </div>
+
+            </div>
+
+
+            <!-- HERO CARD -->
+
+            <div class="hero-card-wrapper reveal">
+
+                <div class="hero-card">
+
+                    <div class="profile-ring">
+
+                        <div class="profile-image">
+
+                            <!-- =================================================
+                                 🩷 آدرس عکس پروفایل خودت را اینجا بگذار
+                                 مثال:
+                                 https://example.com/profile.jpg
+                            ================================================== -->
+
+                            <img src="images/profile.jpg" alt="تصویر پروفایل">
+
+                        </div>
+
+                    </div>
+
+
+                    <h3>
+                        Selma Studio
+                    </h3>
+
+                    <p>
+                        Web Designer & Developer
+                    </p>
+
+
+                    <div class="mini-stats">
+
+                        <div>
+                            <strong>10+</strong>
+                            <span>پروژه</span>
+                        </div>
+
+                        <div>
+                            <strong>5+</strong>
+                            <span>مهارت</span>
+                        </div>
+
+                        <div>
+                            <strong>100%</strong>
+                            <span>علاقه</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="floating-card card-one">
+
+                    <svg>
+                        <use href="#icon-code"></use>
+                    </svg>
+
+                    <span>Coding</span>
+
+                </div>
+
+
+                <div class="floating-card card-two">
+
+                    <svg>
+                        <use href="#icon-palette"></use>
+                    </svg>
+
+                    <span>Design</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT -->
+
+        <section class="section" id="about">
+
+            <div class="section-title reveal">
+
+                <span>درباره من</span>
+
+                <h2>
+                    کمی بیشتر با من آشنا شوید
+                </h2>
+
+                <p>
+                    مسیر یادگیری و علاقه‌مندی‌های من
+                </p>
+
+            </div>
+
+
+            <div class="about-grid">
+
+                <div class="about-text glass-card reveal">
+
+                    <div class="title-icon">
+
+                        <svg>
+                            <use href="#icon-user"></use>
+                        </svg>
+
+                    </div>
+
+
+                    <h3>
+                        من کی هستم؟
+                    </h3>
+
+
+                    <p>
+                        من سلما هستم و به طراحی سایت،
+                        برنامه‌نویسی و ساخت پروژه‌های خلاقانه
+                        علاقه دارم.
+                    </p>
+
+
+                    <p>
+                        در پروژه‌ها سعی می‌کنم علاوه بر اینکه
+                        سایت عملکرد مناسبی داشته باشد،
+                        ظاهر زیبا و تجربه کاربری خوبی هم داشته باشد.
+                    </p>
+
+
+                    <a href="#contact" class="text-link">
+
+                        همکاری با من
+
+                        <svg>
+                            <use href="#icon-arrow-left"></use>
+                        </svg>
+
+                    </a>
+
+                </div>
+
+
+                <div class="about-info reveal">
+
+                    <div class="info-card">
+
+                        <svg>
+                            <use href="#icon-graduation"></use>
+                        </svg>
+
+                        <div>
+                            <span>رشته</span>
+                            <strong>شبکه و نرم‌افزار</strong>
+                        </div>
+
+                    </div>
+
+
+                    <div class="info-card">
+
+                        <svg>
+                            <use href="#icon-laptop"></use>
+                        </svg>
+
+                        <div>
+                            <span>زمینه فعالیت</span>
+                            <strong>طراحی و توسعه وب</strong>
+                        </div>
+
+                    </div>
+
+
+                    <div class="info-card">
+
+                        <svg>
+                            <use href="#icon-heart"></use>
+                        </svg>
+
+                        <div>
+                            <span>علاقه‌مندی</span>
+                            <strong>طراحی سایت و برنامه‌نویسی</strong>
+                        </div>
+
+                    </div>
+
+
+                    <div class="info-card">
+
+                        <svg>
+                            <use href="#icon-github"></use>
+                        </svg>
+
+                        <div>
+                            <span>پلتفرم پروژه‌ها</span>
+                            <strong>GitHub</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SKILLS -->
+
+        <section class="section" id="skills">
+
+            <div class="section-title reveal">
+
+                <span>مهارت‌ها</span>
+
+                <h2>
+                    چیزهایی که یاد گرفته‌ام
+                </h2>
+
+                <p>
+                    مهارت‌هایی که در پروژه‌ها از آن‌ها استفاده می‌کنم
+                </p>
+
+            </div>
+
+
+            <div class="skills-grid">
+
+                <div class="skill-card reveal">
+
+                    <div class="skill-icon">
+                        HTML
+                    </div>
+
+                    <h3>HTML</h3>
+
+                    <p>
+                        ساختار و محتوای صفحات وب
+                    </p>
+
+                    <div class="progress">
+                        <span style="width:90%"></span>
+                    </div>
+
+                </div>
+
+
+                <div class="skill-card reveal">
+
+                    <div class="skill-icon">
+                        CSS
+                    </div>
+
+                    <h3>CSS</h3>
+
+                    <p>
+                        طراحی و زیباسازی رابط کاربری
+                    </p>
+
+                    <div class="progress">
+                        <span style="width:85%"></span>
+                    </div>
+
+                </div>
+
+
+                <div class="skill-card reveal">
+
+                    <div class="skill-icon">
+                        JS
+                    </div>
+
+                    <h3>JavaScript</h3>
+
+                    <p>
+                        ایجاد تعامل و امکانات سایت
+                    </p>
+
+                    <div class="progress">
+                        <span style="width:70%"></span>
+                    </div>
+
+                </div>
+
+
+                <div class="skill-card reveal">
+
+                    <div class="skill-icon github-skill">
+
+                        <svg>
+                            <use href="#icon-github"></use>
+                        </svg>
+
+                    </div>
+
+                    <h3>GitHub</h3>
+
+                    <p>
+                        مدیریت و انتشار پروژه‌ها
+                    </p>
+
+                    <div class="progress">
+                        <span style="width:75%"></span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             PROJECTS
+        ====================================================== -->
+
+        <section class="section" id="projects">
+
+            <div class="section-title reveal">
+
+                <span>نمونه کارها</span>
+
+                <h2>
+                    پروژه‌های من
+                </h2>
+
+                <p>
+                    پروژه‌هایی که طراحی و پیاده‌سازی کرده‌ام
+                </p>
+
+            </div>
+
+
+            <div class="project-filter reveal">
+
+                <button class="filter-btn active" data-filter="all">
+                    همه
+                </button>
+
+                <button class="filter-btn" data-filter="website">
+                    وب‌سایت
+                </button>
+
+                <button class="filter-btn" data-filter="gallery">
+                    گالری
+                </button>
+
+                <button class="filter-btn" data-filter="school">
+                    پروژه درسی
+                </button>
+
+            </div>
+
+
+            <div class="projects-grid">
+
+
+                <!-- =================================================
+                     PROJECT 1
+                ================================================== -->
+
+                <article class="project-card reveal" data-category="website">
+
+                    <div class="project-image">
+
+                        <!-- 🩷 عکس پروژه ۱ را اینجا بگذار -->
+
+                        <img src="images/resum.jpg" alt="پروژه طراحی سایت">
+
+                        <div class="project-overlay">
+
+                            <!-- 🩷 لینک سایت پروژه ۱ را اینجا بگذار -->
+
+                            <a href="#" class="preview-btn" data-empty-link aria-label="مشاهده پروژه">
+
+                                <svg>
+                                    <use href="#icon-eye"></use>
+                                </svg>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <span class="project-number">
+                            01
+                        </span>
+
+                        <h3>
+                            وب‌سایت شخصی
+                        </h3>
+
+                        <p>
+                            طراحی یک وب‌سایت شخصی مدرن
+                            برای معرفی و نمایش نمونه‌کارها.
+                        </p>
+
+
+                        <div class="tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+
+                        <div class="project-links">
+
+                            <!-- 🩷 لینک سایت پروژه ۱ -->
+
+                            <a href="https://selmastudio.github.io/selma-studio-resume/" data-empty-link>
+
+                                <svg>
+                                    <use href="#icon-external"></use>
+                                </svg>
+
+                                مشاهده سایت
+
+                            </a>
+
+
+                            <!-- 🩷 لینک GitHub پروژه ۱ -->
+
+                            <a href="https://github.com/SelmaStudio" data-empty-link>
+
+                                <svg>
+                                    <use href="#icon-github"></use>
+                                </svg>
+
+                                GitHub
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- =================================================
+                     PROJECT 2
+                ================================================== -->
+
+                <article class="project-card reveal" data-category="gallery">
+
+                    <div class="project-image">
+
+                        <!-- 🩷 عکس پروژه ۲ -->
+
+                        <img src="images/bimechi.jpg" alt="پروژه گالری">
+
+                        <div class="project-overlay">
+
+                            <!-- 🩷 لینک سایت پروژه ۲ -->
+
+                            <a href="#" class="preview-btn" data-empty-link aria-label="مشاهده پروژه">
+
+                                <svg>
+                                    <use href="#icon-eye"></use>
+                                </svg>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <span class="project-number">
+                            02
+                        </span>
+
+                        <h3>
+                         سایت بیمه‌چی
+                        </h3>
+
+                        <p>
+                           طراحی سایت مدرن **بیمه‌چی** برای استعلام، مقایسه و خرید انواع بیمه.
+
+                           
+                        </p>
+
+
+                        <div class="tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JS</span>
+                        </div>
+
+
+                        <div class="project-links">
+
+                            <!-- 🩷 لینک گالری خودت -->
+
+                            <a href="https://selmastudio.github.io/bimechi/" data-empty-link>
+
+                                <svg>
+                                    <use href="#icon-external"></use>
+                                </svg>
+
+                                مشاهده سایت
+
+                            </a>
+
+
+                            <!-- 🩷 لینک GitHub -->
+
+                            <a href="https://github.com/SelmaStudio" data-empty-link>
+
+                                <svg>
+                                    <use href="#icon-github"></use>
+                                </svg>
+
+                                GitHub
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- =================================================
+                     PROJECT 3
+                ================================================== -->
+
+                <article class="project-card reveal" data-category="school">
+
+                    <div class="project-image">
+
+                        <!-- 🩷 عکس پروژه ۳ -->
+
+                        <img src="images/dars.jpg" alt="پروژه درسی">
+
+                        <div class="project-overlay">
+
+                            <!-- 🩷 لینک پروژه ۳ -->
+
+                            <a href="#" class="preview-btn" data-empty-link aria-label="مشاهده پروژه">
+
+                                <svg>
+                                    <use href="#icon-eye"></use>
+                                </svg>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <span class="project-number">
+                            03
+                        </span>
+
+                        <h3>
+                            پروژه درسی
+                        </h3>
+
+                        <p>
+                            یکی از پروژه‌های برنامه‌نویسی
+                            و تمرین‌های دوره تحصیلی.
+                        </p>
+
+
+                        <div class="tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+
+                        <div class="project-links">
+
+                            <!-- 🩷 لینک سایت پروژه ۳ -->
+
+                            <a href="https://selmastudio.github.io/selgram/" data-empty-link>
+
+                                <svg>
+                                    <use href="#icon-external"></use>
+                                </svg>
+
+                                مشاهده سایت
+
+                            </a>
+
+
+                            <!-- 🩷 لینک GitHub پروژه ۳ -->
+
+                            <a href="https://github.com/SelmaStudio" data-empty-link>
+
+                                <svg>
+                                    <use href="#icon-github"></use>
+                                </svg>
+
+                                GitHub
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             GALLERY
+             🩷 اینجا دقیقاً همان جایی است که خودت لینک می‌دهی
+        ====================================================== -->
+
+        <section class="section" id="gallery">
+
+            <div class="section-title reveal">
+
+                <span>گالری</span>
+
+                <h2>
+                    بخشی از دنیای کاری من
+                </h2>
+
+                <p>
+                    تصاویر و طرح‌هایی از پروژه‌ها
+                </p>
+
+            </div>
+
+
+            <div class="gallery-grid reveal">
+
+
+                <!-- GALLERY 1 -->
+
+                <a href="#" class="gallery-item big" data-empty-link>
+
+                    <!-- 🩷 آدرس عکس گالری ۱ -->
+
+                    <img src="images/gallery1.jpg" alt="تصویر گالری">
+
+                    <div class="gallery-caption">
+                        تصویر اول
+                    </div>
+
+                </a>
+
+
+                <!-- GALLERY 2 -->
+
+                <a href="#" class="gallery-item" data-empty-link>
+
+                    <!-- 🩷 آدرس عکس گالری ۲ -->
+
+                    <img src="images/gallery2.jpg" alt="تصویر گالری">
+
+                    <div class="gallery-caption">
+                        تصویر دوم
+                    </div>
+
+                </a>
+
+
+                <!-- GALLERY 3 -->
+
+                <a href="#" class="gallery-item" data-empty-link>
+
+                    <!-- 🩷 آدرس عکس گالری ۳ -->
+
+                    <img src="images/gallery3.jpg" alt="تصویر گالری">
+
+                    <div class="gallery-caption">
+                        تصویر سوم
+                    </div>
+
+                </a>
+
+
+                <!-- GALLERY 4 -->
+
+                <a href="#" class="gallery-item" data-empty-link>
+
+                    <!-- 🩷 آدرس عکس گالری ۴ -->
+
+                    <img src="images/gallery4.jpg" alt="تصویر گالری">
+
+                    <div class="gallery-caption">
+                        تصویر چهارم
+                    </div>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT -->
+
+        <section class="section" id="contact">
+
+            <div class="contact-box reveal">
+
+                <div class="contact-content">
+
+                    <span>
+                        ارتباط با من
+                    </span>
+
+                    <h2>
+                        ایده‌ای برای یک پروژه دارید؟
+                    </h2>
+
+                    <p>
+                        اگر می‌خواهید درباره یک پروژه،
+                        همکاری یا ایده جدید صحبت کنیم،
+                        می‌توانید از طریق شبکه‌های اجتماعی با من در ارتباط باشید.
+                    </p>
+
+
+                    <div class="contact-buttons">
+
+                        <!-- 🩷 لینک GitHub خودت -->
+
+                        <a href="https://github.com/SelmaStudio" class="btn btn-primary" data-empty-link>
+
+                            <svg>
+                                <use href="#icon-github"></use>
+                            </svg>
+
+                            GitHub
+
+                        </a>
+
+
+                        <!-- 🩷 لینک Instagram خودت -->
+
+                        <a href="https://www.instagram.com/gxriue" class="btn btn-secondary" target="_blank" <svg>
+                            <use href="#icon-instagram"></use>
+                            </svg>
+
+                            Instagram
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="contact-decoration">
+
+                    <svg>
+                        <use href="#icon-heart"></use>
+                    </svg>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-logo">
+                Selma<span>.</span>
+            </div>
+
+            <p>
+                ❤️ طراحی شده توسط سلما ❤️
+            </p>
+
+
+            <div class="footer-socials">
+
+                  <a href="https://github.com/SelmaStudio"
+   class="social-link"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="GitHub">
+
+    <svg>
+        <use href="#icon-github"></use>
+    </svg>
+
+</a>
+
+                  <a href="https://www.instagram.com/gxriue"
+   class="social-link"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Instagram">
+
+    <svg>
+        <use href="#icon-instagram"></use>
+    </svg>
+
+</a>
+
+           
+                   <a href="https://t.me/gxriue"
+   class="social-link"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Telegram">
+
+    <svg>
+        <use href="#icon-telegram"></use>
+    </svg>
+
+</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 Selma Portfolio — تمام حقوق محفوظ است.
+
+        </div>
+
+    </footer>
+
+
+    <!-- BACK TO TOP -->
+
+    <button class="back-top" id="backTop" aria-label="بازگشت به بالا">
+
+        <svg>
+            <use href="#icon-arrow-up"></use>
+        </svg>
+
+    </button>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
